@@ -1,0 +1,9 @@
+stages:
+  - build
+
+build:
+  stage: build
+  interruptible: true
+  script:
+    - echo "Building things ..."
+
