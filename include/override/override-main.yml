@@ -10,5 +10,6 @@ build:
   interruptible: true
   script:
     - echo "Building things from main stage..."
-    - echo "Postgres user is $POSTGRES_USER"
-    - echo "Postgres password is $POSTGRES_PASSWORD"
+    - echo "Postgres user is '$POSTGRES_USER'"
+    - echo "Postgres password is '$POSTGRES_PASSWORD'"
+    - echo "The job's stage is '$CI_JOB_STAGE'"
