@@ -1,0 +1,13 @@
+include: '/include.yml'
+
+stages:
+  - main-stage
+  - include-stage
+
+build:
+  stage: main-stage
+  interruptible: true
+  script:
+    - echo "Building things from main stage..."
+
+# Put this single line to .gitlab-ci.yml to include current file: include: '/include/basic/include-main.yml'

@@ -1,10 +1,1 @@
-include: '/include/include.yml'
-
-stages:
-  - build
-
-build:
-  stage: build
-  interruptible: true
-  script:
-    - echo "Building things ..."
+include: '/include/include-main.yml'
