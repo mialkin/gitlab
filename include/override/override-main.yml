@@ -10,5 +10,5 @@ build:
   interruptible: true
   script:
     - echo "Building things from main stage..."
-    - echo "Postgres user: $POSTGRES_USER"
-    - echo "Postgress password: $POSTGRES_PASSWORD"
+    - echo "Postgres user is $POSTGRES_USER"
+    - echo "Postgres password is $POSTGRES_PASSWORD"
