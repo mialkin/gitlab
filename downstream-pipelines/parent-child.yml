@@ -1,0 +1,8 @@
+stages:
+  - child-stage
+
+child-job:
+  stage: child-stage
+  interruptible: true
+  script:
+    - echo "Building things in child pipeline ..."

@@ -1,0 +1,11 @@
+stages:
+  - include-stage
+
+include-job:
+  stage: build
+  interruptible: true
+  script:
+    - echo "Building things for include-job ..."
+      
+# Put this to .gitlab-ci.yml to include current file: include: '/include/include.yml'
+# https://docs.gitlab.com/ee/ci/yaml/includes.html
