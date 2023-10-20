@@ -1,10 +1,10 @@
 include: '/include/include.yml'
 
-#stages:
-#  - build
-#
-#build:
-#  stage: build
-#  interruptible: true
-#  script:
-#    - echo "Building things ..."
+stages:
+  - build
+
+build:
+  stage: build
+  interruptible: true
+  script:
+    - echo "Building things ..."
