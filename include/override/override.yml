@@ -1,0 +1,9 @@
+variables:
+  POSTGRES_USER: override_user
+
+override-build-job:
+  stage: main-stage
+  script:
+    - echo "Building things from override-build-job..."
+    - echo "Postgres user is $POSTGRES_USER"
+    - echo "Postgres password is $POSTGRES_PASSWORD"
