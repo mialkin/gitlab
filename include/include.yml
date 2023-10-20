@@ -2,7 +2,7 @@ stages:
   - include-stage
 
 include-job:
-  stage: build
+  stage: include-stage
   interruptible: true
   script:
     - echo "Building things for include-job ..."
