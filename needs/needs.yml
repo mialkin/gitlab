@@ -1,0 +1,20 @@
+build-job:
+  script:
+    - echo "Compiling code..."
+      
+test-job:
+  needs: build-job
+  script:
+    - echo "Testing the code..."
+      
+deploy-job:
+  needs: test-job
+  script:
+    - echo "Deploying the code..."
+      
+one-more-job:
+  script:
+    - echo "Doing one more job..."
+      
+# Put this to .gitlab-ci.yml file:
+# include: '/needs/needs.yml'
