@@ -1,0 +1,7 @@
+include:
+  - project: 'mialkin/gitlab-second'
+    ref: master
+    file: '/include/basic/include.yml'
+    
+# Put this to .gitlab-ci.yml file:
+# include: '/include/gitlab-second/include.yml'

@@ -14,6 +14,7 @@ build:
     - echo "Postgres user is $POSTGRES_USER"
     - echo "Postgres password is $POSTGRES_PASSWORD"
 
-# Put this to .gitlab-ci.yml file: "include: '/include/override/override-main.yml'"
+# Put this to .gitlab-ci.yml file:
+# include: '/include/override/override-main.yml'
 
 # https://docs.gitlab.com/ee/ci/yaml/includes.html#override-included-configuration-values

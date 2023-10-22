@@ -9,4 +9,5 @@ build:
   script:
     - echo "Building things from main stage..."
 
-# Put this to .gitlab-ci.yml file: "include: '/include/basic/include-main.yml'"
+# Put this to .gitlab-ci.yml file:
+# include: '/include/basic/include-main.yml'

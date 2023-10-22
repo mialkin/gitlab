@@ -1,1 +1,1 @@
-include: '/include/override/override-main.yml'
+include: '/include/gitlab-second/include.yml'
