@@ -1,6 +1,6 @@
 include:
   - project: 'mialkin/gitlab-second'
-    ref: master
+    ref: main
     file: '/include/basic/include.yml'
     
 # Put this to .gitlab-ci.yml file:
