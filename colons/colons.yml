@@ -1,0 +1,10 @@
+mialkin:build-job:
+  script:
+    - echo "Compiling code..."
+
+mialkin:test-job:
+  script:
+    - echo "Testing the code..."
+
+# Put this to .gitlab-ci.yml file:
+# include: '/colons/colons.yml'
