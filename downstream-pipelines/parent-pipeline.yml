@@ -1,0 +1,21 @@
+stages:
+  - parent-stage
+  - parent-second-stage
+
+parent job:
+  stage: parent-stage
+  script:
+    - echo "Building things in parent pipeline ..."
+
+parent second job:
+  stage: parent-second-stage
+  script:
+    - echo "Triggering job in child pipeline ..."
+  trigger:
+    include:
+      - local: /downstream-pipelines/child-pipeline.yml
+
+# https://docs.gitlab.com/ee/ci/pipelines/downstream_pipelines.html
+
+# Put this to .gitlab-ci.yml file:
+# include: '/downstream-pipelines/parent-pipeline.yml'

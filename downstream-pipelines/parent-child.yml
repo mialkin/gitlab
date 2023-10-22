@@ -1,7 +1,0 @@
-stages:
-  - child-stage
-
-child-job:
-  stage: child-stage
-  script:
-    - echo "Building things in child pipeline ..."
