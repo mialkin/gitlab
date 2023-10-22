@@ -15,6 +15,8 @@ deploy-job:
 one-more-job:
   script:
     - echo "Doing one more job..."
-      
+    
+# https://docs.gitlab.com/ee/ci/yaml/#needs
+
 # Put this to .gitlab-ci.yml file:
 # include: '/needs/needs.yml'
