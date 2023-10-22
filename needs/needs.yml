@@ -3,12 +3,12 @@ build-job:
     - echo "Compiling code..."
       
 test-job:
-  needs: build-job
+  needs: ["build-job"]
   script:
     - echo "Testing the code..."
       
 deploy-job:
-  needs: test-job
+  needs: ["test-job"]
   script:
     - echo "Deploying the code..."
       
