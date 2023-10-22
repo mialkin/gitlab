@@ -9,8 +9,8 @@ parent job:
 
 parent second job:
   stage: parent-second-stage
-  script:
-    - echo "Triggering job in child pipeline ..."
+#  script:                        # jobs:parent second job config these keys cannot be used together: script, trigger
+#    - echo "Triggering job in child pipeline ..." 
   trigger:
     include:
       - local: /downstream-pipelines/child-pipeline.yml
