@@ -1,0 +1,10 @@
+build job whitespaces:
+  script:
+    - echo "Compiling code..."
+
+test job whitespaces too:
+  script:
+    - echo "Testing the code..."
+
+# Put this to .gitlab-ci.yml file:
+# include: '/colons/whitespaces.yml'
