@@ -1,8 +1,1 @@
 include: '/jobs/rules.yml'
-
-tika:
-  script: echo "Testing rules... | $CI_MERGE_REQUEST_ID | $CI_COMMIT_BRANCH | $CI_DEFAULT_BRANCH | $CI_COMMIT_TAG"
-  rules:
-    - if: $CI_MERGE_REQUEST_ID
-    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
-    - if: $CI_COMMIT_TAG =~ /release.my-application.*$/
